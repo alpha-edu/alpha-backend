@@ -1,5 +1,5 @@
 const express = require("express");
-const course = require("./../model/couse")
+const course = require("./../model/course")
 
 var addCourse = express.Router();
 
