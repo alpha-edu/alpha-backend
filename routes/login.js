@@ -11,7 +11,7 @@ var login = express.Router();
 login.post("/student", async(req, res) => {
     try {
         const requestData = JSON.parse(req.body)
-        const {email, password, userType} = requestData;
+        const {email, password} = requestData;
         
         if(!(email && password)){
             return res.status(400).send("enter all inputs");
