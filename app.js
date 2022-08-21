@@ -15,7 +15,9 @@ const login = require("./routes/login");
 const app = express();
 
 app.use(bodyparser.text({ limit: '50mb' }))
-app.use(cors())
+app.use(cors({
+  origin:'*'
+}))
 
 
 app.get("/", (req, res) => {
