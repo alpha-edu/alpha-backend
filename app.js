@@ -10,6 +10,7 @@ const bodyparser = require("body-parser");
 const addCourse = require("./routes/AddCourse");
 const addClassNotification = require("./routes/AddClassNotification");
 const addAnnouncement = require("./routes/AddAnnouncement");
+const login = require("./routes/login");
 
 const app = express();
 
@@ -30,5 +31,5 @@ app.use("/register", register)
 app.use("/addCourse", addCourse)
 app.use("/addClassNotification", addClassNotification)
 app.use("/addAnnouncement", addAnnouncement)
-
+app.use("/login", login)
 module.exports = app;
